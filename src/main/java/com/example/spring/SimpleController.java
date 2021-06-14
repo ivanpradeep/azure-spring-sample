@@ -1,14 +1,13 @@
 package com.example.spring;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SimpleController {
-	@RequestMapping(method = RequestMethod.GET, path = "/message")
+	@GetMapping("/")
 	public String greet() {
-		return "Hello, welcome to spring app";
+		return "Hello, welcome to spring app -2.0";
 	}
 
 }
